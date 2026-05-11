@@ -20,6 +20,16 @@ https://openneuro.org/datasets/ds004504
 ## Tools
 MNE-Python, mne-connectivity, scikit-learn, pingouin, pandas, seaborn
 
+## How to Run
+1. Download the dataset from https://openneuro.org/datasets/ds004504
+2. Install dependencies: `pip install mne mne-connectivity pandas numpy matplotlib seaborn scipy scikit-learn pingouin`
+3. Open `eeg_alzheimers_analysis.ipynb` in JupyterLab and run cells in order
+
+## Files
+- `eeg_alzheimers_analysis.ipynb` — full analysis pipeline
+- `Verma_EEG_Dementia_complete.docx` — manuscript
+- Figures — all output plots included in repository
+
 ## Author
 Arnav Verma — BSc Psychology Honours, Christ (Deemed to be University), Delhi NCR
 Independent Research, 2025
