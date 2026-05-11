@@ -22,14 +22,13 @@ MNE-Python, mne-connectivity, scikit-learn, pingouin, pandas, seaborn
 
 ## How to Run
 1. Download the dataset from https://openneuro.org/datasets/ds004504
-2. Install dependencies: `pip install mne mne-connectivity pandas numpy matplotlib seaborn scipy scikit-learn pingouin`
-3. Open `eeg_alzheimers_analysis.ipynb` in JupyterLab and run cells in order
+2. Install dependencies: 'pip install mne mne-connectivity pandas numpy matplotlib seaborn scipy scikit-learn pinguoun'
+3. Open 'eeg_AD_FTD_analysis_pipeline.ipynb' in JupyterLab and run cells in order
 
 ## Files
-- `eeg_AD_FTD__analysis_pipeline.ipynb` — full analysis pipeline
-- `Verma_EEG_Dementia_complete.docx` — manuscript
+- 'eeg_AD_FTD_analysis_pipeline.ipynb' — full analysis pipeline
 - Figures — all output plots included in repository
 
 ## Author
 Arnav Verma — BSc Psychology Honours, Christ (Deemed to be University), Delhi NCR
-Independent Research, 2025
+Independent Research, 2026
