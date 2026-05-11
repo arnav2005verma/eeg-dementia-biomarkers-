@@ -26,7 +26,7 @@ MNE-Python, mne-connectivity, scikit-learn, pingouin, pandas, seaborn
 3. Open `eeg_alzheimers_analysis.ipynb` in JupyterLab and run cells in order
 
 ## Files
-- `eeg_alzheimers_analysis.ipynb` — full analysis pipeline
+- `eeg_AD_FTD__analysis_pipeline.ipynb` — full analysis pipeline
 - `Verma_EEG_Dementia_complete.docx` — manuscript
 - Figures — all output plots included in repository
 
