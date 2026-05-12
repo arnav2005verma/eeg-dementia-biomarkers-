@@ -1,7 +1,9 @@
 # EEG Biomarker Analysis: Alzheimer's Disease, FTD, and Healthy Controls
 
-Independent research project analysing resting-state EEG from 88 subjects 
-(OpenNeuro ds004504) using MNE-Python.
+# ABSTRACT
+
+Alzheimer’s Disease (AD) accounts for 60-70% of all dementia cases world-wide, whereas frontotemporal dementia (FTD) is the leading cause of dementia onset before the age of 65. Their electrophysiological profiles and relationships to cognitive severity remain incompletely characterised in open, reproducible pipelines. Resting-state EEG recordings from 88 participants (36 AD, 23 FTD, 29 HC) from OpenNeuro ds004504 were analysed using MNE-Python. Relative band power, theta/alpha ration, Individual Alpha Frequency (IAF), and alpha PLV were extracted. Correlations with MMSE scores were computed with and without age correction, and SVM and Random Forest Classifiers were evaluated using stratified 5-fold cross validation.  The results showed how theta and alpha band powers differ significantly across groups (both p = 0.001). Additionally, the theta/alpha ratio showed a strong negative correlation with MMSE (r = -0.49, p < 0.000002), with the  IAF showcasing a significant positive correlation (r = 0.37, p = 0.0004) with MMSE scores as well. The alpha PLV has a significant positive correlation (r = 0.27, p = 0.012), even after age correction, showcasing age to not be a confounding variable.Fruthermore,  SVM achieved 72.4% balanced accuracy for AD vs HC. Multiple EEG biomarkers consistently index cognitive severity in AD and FTD. This open MNE-Python pipeline offers a reproducible framework for EEG-based dementia biomarker research.
+
 
 ## Key Findings
 1) Significant EEG slowing was observed in AD and FTD: Theta power differed significantly across groups (p = 0.001), with AD (0.112) and FTD (0.094) showing higher theta activity than healthy controls (HC = 0.060). Alpha power was significantly reduced (p = 0.001), with HC showing the highest alpha power (0.214) compared to AD (0.121) and FTD (0.126).
