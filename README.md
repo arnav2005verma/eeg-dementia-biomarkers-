@@ -4,14 +4,13 @@ Independent research project analysing resting-state EEG from 88 subjects
 (OpenNeuro ds004504) using MNE-Python.
 
 ## Key Findings
-- Theta/alpha ratio correlates strongly with MMSE cognitive scores (r = -0.49, p < 0.000001)
-- Individual alpha frequency significantly lower in AD (8.13 Hz) vs HC (9.56 Hz)
-- Alpha-band PLV connectivity disrupted in posterior regions in AD
-- SVM achieves 72.4% accuracy distinguishing AD from healthy controls
-
-## Pipeline
-Preprocessing → PSD Band Power → Theta/Alpha Ratio → IAF → 
-Alpha PLV Connectivity → ML Classification → Age-corrected Statistics
+1) # Significant EEG slowing was observed in AD and FTD: Theta power differed significantly across groups (p = 0.001), with AD (0.112) and FTD (0.094) showing higher theta activity than healthy controls (HC = 0.060). Alpha power was significantly reduced (p = 0.001), with HC showing the highest alpha power (0.214) compared to AD (0.121) and FTD (0.126).
+2) # Topographic maps showed distinct spatial EEG abnormalities: HC subjects displayed low theta activity and strong posterior alpha rhythms over parietal-occipital regions, while AD showed pronounced frontal/frontocentral theta hotspots (Fz, Cz, F3, F4) and near-complete loss of posterior alpha activity. FTD showed intermediate patterns with partial preservation of posterior alpha.
+3) # Theta/alpha ratio strongly differentiated groups and tracked cognitive decline: The theta/alpha ratio increased progressively from HC (0.42 ± 0.38) to FTD (1.15 ± 0.95) and AD (1.97 ± 1.43), with AD showing a ratio ~4.7× higher than HC. The ratio showed a strong negative correlation with MMSE scores (r = −0.50, p < 0.000001), remaining significant after age correction (r = −0.49, p < 0.000002).
+4) # Individual Alpha Frequency (IAF) was significantly reduced in AD: IAF differed significantly across groups (p = 0.0001), with AD showing the lowest frequency (8.13 ± 1.52 Hz), followed by FTD (9.01 ± 1.34 Hz) and HC (9.56 ± 1.02 Hz). Lower IAF correlated with lower MMSE scores (r = 0.38, p = 0.0003), remaining significant after age correction (r = 0.37, p = 0.0004).
+5) # Alpha-band functional connectivity (PLV) was reduced in dementia groups: Mean alpha PLV differed significantly (p = 0.0008), with HC showing the highest connectivity (0.698 ± 0.051), followed by AD (0.653 ± 0.056) and FTD (0.644 ± 0.060). PLV positively correlated with MMSE scores (r = 0.28, p = 0.007), remaining significant after age correction (r = 0.27, p = 0.012).
+6) # EEG biomarker relationships remained robust after controlling for age: Age was not significantly correlated with MMSE (r = 0.16, p = 0.14). All biomarker associations remained significant after age correction, including theta/alpha ratio (r = −0.49), IAF (r = 0.37), and alpha PLV (r = 0.27), confirming disease-related rather than age-related effects.
+7) # Machine learning classification achieved moderate success for AD detection: SVM classification of AD vs HC achieved a balanced accuracy of 72.4% ± 12.8%. Three-class random forest classification (AD vs FTD vs HC) achieved 47.4% ± 11.2% balanced accuracy. The confusion matrix showed correct classification rates of 64% for AD, 62% for HC, and only 17% for FTD, with most FTD cases misclassified as AD or HC.
 
 ## Dataset
 OpenNeuro ds004504 — 88 subjects (36 AD, 23 FTD, 29 HC)
